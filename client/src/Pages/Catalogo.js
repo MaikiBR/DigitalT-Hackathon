@@ -1,8 +1,12 @@
 import React from "react";
+import iphone from "../Media/iphone.png"
+
+import '../SCSS/_catalogo.scss'
+
 
 function Catalogo() {
   return (
-      <h1>Catalogo</h1>
+    <div></div>
     );
   }
 

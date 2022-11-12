@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -13,5 +15,31 @@ li {
 }
   
 body {
-    background-color: #eee;
+    background-color: $dashboard-bg;
+    color: #fff;
+}
+
+.intro .content {
+    position: relative;
+    max-width: 500px;
+    margin: 40px 0;
+}
+
+.phrase {
+    font-size: 30px;
+    margin: 0;
+    font-family: $encode-sans;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 100px;
+    margin: 0;
+    line-height: 0.5;
+    font-family: $bebas;
+}
+
+.info {
+    font-size: 20px;
+    font-family: $encode-sans;
 }

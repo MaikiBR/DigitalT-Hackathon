@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Main from './Pages/Main';
 import Dashboard from './Pages/Dashboard';
-import Manual from './Pages/Manual';
 import Catalogo from './Pages/Catalogo';
 import Badge from './Pages/Badge';
 
@@ -24,7 +23,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
-        <Route exact path="/manual" element={<Manual />} />
         <Route exact path="/catalogo" element={<Catalogo />} />
         <Route exact path="/badge" element={<Badge />} />
       </Routes>

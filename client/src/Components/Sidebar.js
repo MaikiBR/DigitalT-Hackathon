@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPieChart, faHome, faRankingStar, faFaceGrin, faArrowAltCircleLeft, faArrowAltCircleRight, faBookAtlas, faBook, faBookmark, faTicket} from '@fortawesome/free-solid-svg-icons'
+import { faPieChart, faArrowAltCircleLeft, faArrowAltCircleRight, faBook, faTicket, faMobilePhone} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from "../Media/logo-dabi-gris.png"
+import logo from "../Media/CO.png"
 
 import "../SCSS/_sidebar.scss"
 
@@ -46,23 +46,13 @@ const SideBar = (props) => {
                         </a>
                     </li>
                     </Link>
-                    <Link to="/manual">
-                    <li>
-                        <a className='menu-item'>
-                            <div className='menu-icon'>
-                                <FontAwesomeIcon icon={faBook} />
-                            </div>
-                            <span>Manual</span>
-                        </a>
-                    </li>
-                    </Link>
                     <Link to="/catalogo">
                     <li>
                         <a className='menu-item'>
                             <div className='menu-icon'>
-                                <FontAwesomeIcon icon={faBookmark} />
+                                <FontAwesomeIcon icon={faMobilePhone} />
                             </div>
-                            <span>Catalogo</span>
+                            <span>Catalogue</span>
                         </a>
                     </li>
                     </Link>
