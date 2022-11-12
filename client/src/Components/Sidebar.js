@@ -60,9 +60,9 @@ const SideBar = (props) => {
                     <li>
                         <a className='menu-item'>
                             <div className='menu-icon'>
-                                <FontAwesomeIcon icon={faTicket} />
+                                <FontAwesomeIcon icon={faCalculator} />
                             </div>
-                            <span>Badging</span>
+                            <span>Evaluation</span>
                         </a>
                     </li>
                     </Link>
