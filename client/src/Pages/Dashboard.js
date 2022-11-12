@@ -4,14 +4,14 @@ import pres2 from "../Media/pres2.gif"
 import pres3 from "../Media/pres3.gif"
 import pres4 from "../Media/pres4.gif"
 import pres5 from "../Media/pres5.gif"
-
+import diagrama from "../Media/diagrama.png"
 
 import '../SCSS/_dashboard.scss'
 
 function Dashboard() {
   return (
     <div className="dashboard-container">
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
       <h1 className="dashboard-title">Do you want to see how you are doing against different mobile companies around the world?</h1>
       <p className="dashboard-p">
       The performance indicators in practicing green operations can be classified into financial, operational, and environmental. 
@@ -27,7 +27,19 @@ function Dashboard() {
       of offices and facilities.
       </p>
       <br /> <br /> 
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
+
+      <h1 className="lca-title">Green Supply Chain - GHG</h1>
+      <h2 className="lca-subtitle">Life Cycle Assesment [LCA]</h2>
+
+      <img 
+        src={diagrama}
+        width="80%"
+        height="80%"
+        className="diagram-img"
+      />
+
+      <div className="divider"></div>
       <div class="small-img-row">
       <img
         src={pres1}
@@ -36,7 +48,7 @@ function Dashboard() {
         class="small-img"
       />
       </div>
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
       <div class="small-img-row">
         <img
           src={pres2}
@@ -45,7 +57,7 @@ function Dashboard() {
           class="small-img"
         />
       </div>
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
       <div class="small-img-row">
       <img
         src={pres3}
@@ -54,7 +66,7 @@ function Dashboard() {
         class="small-img"
       />
       </div>
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
       <div class="small-img-row">
       <img
         src={pres4}
@@ -63,7 +75,7 @@ function Dashboard() {
         class="small-img"
       />
       </div>
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
       <div class="small-img-row">
       <img
         src={pres5}
@@ -72,7 +84,7 @@ function Dashboard() {
         class="small-img"
       />
       </div>
-      <div className="gif-divider"></div>
+      <div className="divider"></div>
     </div>
     );
   }

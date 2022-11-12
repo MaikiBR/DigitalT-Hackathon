@@ -1,9 +1,5 @@
 @import "./variables.scss";
 
-body {
-    background-color: $dashboard-bg;
-    color: #fff;
-}
 
 .dashboard-title {
     font-size: 60px;
@@ -17,7 +13,7 @@ body {
     text-align: center;
 }
 
-.gif-divider {
+.divider {
     margin-bottom: 35px;
     width: 100%;
     height: 3px;
@@ -43,4 +39,21 @@ body {
     width: 20%;
     size: 100%;
     padding: 6px;
+}
+
+.diagram-img {
+    margin-left: 60px;
+}
+
+.lca-subtitle {
+    font-family: $encode-sans;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lca-title {
+    text-align: center;
+    font-family: $bebas;
+    font-size: 40px;
 }

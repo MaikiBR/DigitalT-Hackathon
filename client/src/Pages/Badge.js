@@ -8,29 +8,25 @@ import '../SCSS/_badge.scss'
 function Badge() {
   function product_evaluation_formula() {
     var lca_value = document.getElementById("lca").value;
+    var pc_eele_value = document.getElementById("pc_eele").value;
+    var pc_etm_value = document.getElementById("pc_etm").value;
+    var retriv_value = document.getElementById("retriv").value;
 
-    if (lca_value = 1){
-      var lca = 0.2;
-    }else if (lca_value = 2){
-      var lca = 0.2 * 0.5;
-    }else if (lca_value = 3){
-      var lca = 0.2 * 0.25;
-    }else if (lca_value = 4){
-      var lca = 0;
+    if(lca_value = 1){  // Condicional para LCA 
+       var lca = 0.2
+    } else if (lca_value = 2){
+       var lca = 0.3 * 0.5;
+    } else if (lca_value = 3){
+       var lca = 0.3 * 0.25;
+    } else if (lca_value = 4){
+       var lca = 0;
     }
 
-    var pc_eele = document.getElementById("pc_eele").value;
+    var pc_eele = pc_eele_value * 0.25 / 100;
+    var pc_etm = pc_etm_value * 0.25 / 100;
+    var retriv = retriv_value * 0.2 / 100;
 
-    var pc_etm = document.getElementById("pc_etm").value;
-
-    var pc_retriv = document.getElementById("pc_retriv").value;
-    var retriv = pc_retriv * 0.002;
-
-    var pc_eele_value = (pc_eele * 0.25) / 100; 
-    var pc_etm_value = (pc_etm * 0.25) / 100;
- 
-
-    var product_ev = pc_eele_value + pc_etm_value + lca + retriv;
+    var product_ev = pc_eele + pc_etm + lca + retriv;
     console.log(product_ev);
 
     if (product_ev >= 0.7){
@@ -44,48 +40,37 @@ function Badge() {
   function company_evaluation_formula() {
     var co2_mea_value = document.getElementById("co2_mea").value;
     var carbon_co_value = document.getElementById("carbon_co").value;
-    var tons_co2_value = document.getElementById("tons_co2").value;
-    var coef_ton_co2 = 0.2
+    var tons_co2_value  = document.getElementById("tons_co2").value;
+    var coef_tons_co2 = 0.2
 
-    console.log(co2_mea_value)
-    if (co2_mea_value = 1){
-        var co2_mea = 0.5;
-    }
-    if (co2_mea_value = 2){
-        var co2_mea = 0.5 * 0.5;
+    if(co2_mea_value = 1){  // Condicional para LCA 
+    var    co2_mea = 0.5
+    } else if (co2_mea_value = 2){
+    var    co2_mea = 0.5 * 0.5;
+    } else if (co2_mea_value = 3){
+    var    co2_mea = 0;
     } 
-    if (co2_mea_value = 3){
-        var co2_mea = 0
-    }
 
-    console.log(co2_mea)
+    if(carbon_co_value = 1){  // Condicional para LCA 
+    var    carbon_co = 0.3
+    } else if (carbon_co_value = 2){
+    var   carbon_co = 0.3 * 0.5;
+    } else if (carbon_co_value = 3){
+    var    carbon_co = 0;
+    var   coef_tons_co2 = 0.5;
+    } 
 
-    console.log(carbon_co_value)
-    if (carbon_co_value = 1){
-        var carbon_co = 0.3*1;
-      }else if (carbon_co_value = 2){
-        var carbon_co = 0;
-      }else if (carbon_co_value  = 3){
-        var coef_ton_co2 = 0.5;
-        var carbon_co = 0;
-    }
-    
-    console.log(carbon_co)
+    if(tons_co2_value = 1){  // Condicional para LCA 
+        var tons_co2 = coef_tons_co2;
+    } else if (tons_co2_value = 2){
+        var tons_co2 = coef_tons_co2 * 0.5;
+    } else if (tons_co2_value = 3){
+        var tons_co2 = coef_tons_co2 * 0.25;
+    } 
 
-    console.log(tons_co2_value)
-    if (tons_co2_value = 1){
-        var tons_co2 = coef_ton_co2 *1;
-      }else if (tons_co2_value = 2){
-        var tons_co2 = coef_ton_co2 * 0.5;
-      }else if (tons_co2_value = 3){
-        var tons_co2 = coef_ton_co2 * 0.25;
-    }
-    
-    
-    console.log(tons_co2)
-    
-    var company_ev = co2_mea + tons_co2 + carbon_co;
+    var company_ev = tons_co2 + carbon_co + co2_mea ;
     console.log(company_ev);
+
     if (company_ev >= 0.7){
       console.log("Badge green");
     }

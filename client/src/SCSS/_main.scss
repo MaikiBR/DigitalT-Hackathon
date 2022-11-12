@@ -17,6 +17,7 @@ li {
 body {
     background-color: $dashboard-bg;
     color: #fff;
+    overflow-y: scroll;
 }
 
 .intro .content {
@@ -43,3 +44,9 @@ body {
     font-size: 20px;
     font-family: $encode-sans;
 }
+
+.headline-container {
+    display: flex;
+    justify-content: center;
+}
+

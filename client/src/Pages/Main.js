@@ -1,4 +1,7 @@
 import React from "react";
+import headline1 from "../Media/1.png"
+import headline2 from "../Media/2.png"
+import headline3 from "../Media/3.png"
 
 import '../SCSS/_main.scss'
 
@@ -24,6 +27,31 @@ function Main() {
         <br/>
         <p>The best practices were found to be related to waste management and recycling, and reported the design of effective green base stations, so green actions of the mobile phone producers were beyond its scope.</p>
       </section>
+      <br /> <br />
+      <div className="divider"></div>
+      <div className="headline-container">
+        <img 
+          src={headline1}
+          width="300px"
+          height="190px"
+          className="headline-img"
+        />
+        <img 
+          src={headline2}
+          width="300px"
+          height="190px"
+          className="headline-img"
+        />
+        <img 
+          src={headline3}
+          width="300px"
+          height="190px"
+          className="headline-img"
+          id="headline-final"
+        />
+      </div>
+      <br/>
+      <div className="divider"></div>
     </div>
     );
   }

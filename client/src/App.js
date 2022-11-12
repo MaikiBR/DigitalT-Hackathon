@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
-        <Route exact path="/catalogo" element={<Catalogo />} />
+        <Route exact path="/catalogue" element={<Catalogo />} />
         <Route exact path="/badge" element={<Badge />} />
       </Routes>
     </div>

@@ -1,1 +1,64 @@
 @import "./variables.scss";
+
+
+.divider {
+    margin-bottom: 35px;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+
+.catalogo-title {
+    font-size: 60px;
+    font-family: $bebas;
+    text-align: center;
+}
+
+.catalogo-subtitle {
+    font-size: 30px;
+    font-family: $bebas;
+    text-align: left;
+}
+
+.catalogo-p {
+    font-size: 25px;
+    font-family: $encode-sans;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalogo-p-sub {
+    font-size: 25px;
+    font-family: $encode-sans;
+    text-align: letf;
+    margin-bottom: 20px;
+}
+
+.subtitle-icons {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+.iphone-card {
+    width: 50%;
+    height: 50%;
+}
+
+.iphone-card.inactive {
+    width: 25%;
+    height: 25%;
+}
+
+.samxia-card {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.samxia-card.inactive {
+    width: 25%;
+    height: 25%;
+}
+

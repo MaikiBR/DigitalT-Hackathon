@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPieChart, faArrowAltCircleLeft, faArrowAltCircleRight, faBook, faTicket, faMobilePhone} from '@fortawesome/free-solid-svg-icons'
+import { faPieChart, faArrowAltCircleLeft, faArrowAltCircleRight, faBook, faTicket, faMobilePhone, faCalculator} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -32,7 +32,7 @@ const SideBar = (props) => {
                 </div>
             </div>
 
-            <div className='divider'></div>
+            <div className='sidebar-divider'></div>
 
             <div className='main-menu'>
                 <ul>
@@ -46,7 +46,7 @@ const SideBar = (props) => {
                         </a>
                     </li>
                     </Link>
-                    <Link to="/catalogo">
+                    <Link to="/catalogue">
                     <li>
                         <a className='menu-item'>
                             <div className='menu-icon'>
